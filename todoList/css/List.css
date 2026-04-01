@@ -1,0 +1,47 @@
+/* class List 에
+    1)display 속성 flex,
+    2)flex-direction은 column 설정
+    3)gap은 20px
+*/
+.List {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*
+class List의 하위 자식 input요소
+    1)가로크기 100%
+    2)외곽선 none
+    3)외곽의 아래(bottom) 부분 1px solid rgb(220, 220, 220) 설정
+    4)패딩 상하 15px 좌우 0px 설정
+*/
+.List input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding: 15px 0px;
+}
+    
+/*
+class List의 하위 자식 input:focus 요소
+    1) outline : none설정(요소의 윤곽선 없애기)
+    2) 외곽의 아래(bottom) 부분 1px solid rgb(37, 147, 255); 설정
+*/
+.List input[type="text"]:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(37, 147, 255);
+}
+
+
+/*
+class List의 하위 자식 class todos_wrapper 요소
+    1)display 속성 flex
+    2)flex-direction은 column
+    3)gap은 20px
+*/
+.List .todos_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
